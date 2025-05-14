@@ -1,36 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# RutaIA - Plataforma de Capacitación en IA
 
-## Getting Started
+RutaIA es una aplicación web construida con Next.js que ofrece capacitación personalizada en Inteligencia Artificial para trabajadores y profesionales desplazados de sus empleos a causa de la implementación de IA en sus empresas.
 
-First, run the development server:
+## Características principales
+
+- **Quiz diagnóstico inicial**: Recopila información sobre el perfil profesional, objetivos y presupuesto del usuario.
+- **Rutas personalizadas**: Genera un plan de aprendizaje adaptado a las necesidades específicas de cada usuario.
+- **Contenido diverso**: Incluye módulos con videos, lecturas y ejercicios interactivos.
+- **Sistema de validación**: Permite marcar contenido gratuito como completado o subir certificados de plataformas externas.
+- **Proyecto final**: Los usuarios culminan su capacitación con un proyecto práctico revisado por pares.
+- **Certificación**: Al finalizar satisfactoriamente, se otorga un certificado de capacitación en IA.
+
+## Tecnologías utilizadas
+
+- [Next.js](https://nextjs.org/) - Framework de React con enrutamiento y herramientas de construcción
+- [TypeScript](https://www.typescriptlang.org/) - Superset tipado de JavaScript
+- [Tailwind CSS](https://tailwindcss.com/) - Framework de CSS utilitario
+- [Framer Motion](https://www.framer.com/motion/) - Biblioteca para animaciones en React
+- [React Icons](https://react-icons.github.io/react-icons/) - Colección de iconos para React
+
+## Estructura del proyecto
+
+- `/src/app/` - Componentes principales de la aplicación usando el App Router de Next.js
+- `/src/app/diagnostico/` - Quiz diagnóstico inicial
+- `/src/app/cargando/` - Pantalla de carga mientras se genera la ruta
+- `/src/app/ruta/` - Visualización de la ruta personalizada y módulos
+- `/src/app/modulos/` - Contenido de los diferentes módulos de aprendizaje
+- `/src/app/proyecto/` - Implementación del proyecto final y revisión por pares
+- `/src/app/pagar/` - Sistema de pago para desbloquear contenido premium
+
+## Cómo ejecutar localmente
+
+1. Clona este repositorio
+
+   ```bash
+   git clone https://github.com/tu-usuario/ruta-ia-app.git
+   cd ruta-ia-app
+   ```
+
+2. Instala las dependencias
+
+   ```bash
+   npm install
+   ```
+
+3. Inicia el servidor de desarrollo
+
+   ```bash
+   npm run dev
+   ```
+
+4. Abre [http://localhost:3000](http://localhost:3000) en tu navegador
+
+## Requisitos del sistema
+
+- Node.js 18.0 o superior
+- npm 9.0 o superior
+
+## Implementación en producción
+
+Esta aplicación está optimizada para despliegue en Vercel, pero puede ser desplegada en cualquier plataforma que soporte Next.js.
+
+Para desplegar en Vercel:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install -g vercel
+vercel
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Licencia
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Este proyecto está bajo la Licencia MIT - ver el archivo [LICENSE](LICENSE) para más detalles.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contacto
 
-## Learn More
+Si tienes preguntas o sugerencias, no dudes en contactarnos:
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Correo: info@rutaia.com
+- Twitter: [@RutaIA](https://twitter.com/RutaIA)
